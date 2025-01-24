@@ -8,14 +8,14 @@ const Navbar = async () => {
     const { isAuthenticated } = getKindeServerSession();
     const isUserAuthenticated = await isAuthenticated();
     return (
-        <div className="bg-indigo-500 px-4 md:px-8 lg:px-20">
-            <div className=" flex items-center justify-between py-[15px]">
+        <div className="bg-indigo-500 px-4 md:px-8 lg:px-20 par">
+            <div className="flex flex-col gap-[16px] lg:flex-row items-center justify-between">
                 <div className="flex-1">
                     <h1 className="text-2xl font-semibold text-white">Blog</h1>
                 </div>
                 <div className="flex items-center justify-end">
                     <div className="">
-                        <ul className="flex items-center gap-[15px] font-medium">
+                        <ul className="">
                             <Link href="/"><li className="font-medium text-white px-4 py-[6px] rounded-md bg-sky-500">Home</li></Link>
                             <Link href="/profile"><li className="font-medium text-white px-4 py-[6px] rounded-md bg-sky-500">Profile</li></Link>
                             {
