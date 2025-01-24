@@ -1,13 +1,12 @@
+import Link from "next/link"
 
 const Footer = () => {
     return (
         <div>
             <footer className="footer footer-center bg-slate-900 text-base-content rounded p-10">
                 <nav className="grid grid-flow-col gap-4 text-white">
-                    <a className="link link-hover">About us</a>
-                    <a className="link link-hover">Contact</a>
-                    <a className="link link-hover">Jobs</a>
-                    <a className="link link-hover">Press kit</a>
+                    <Link href='/' className="link link-hover">Home</Link>
+                    <Link href='/profile' className="link link-hover">Profile</Link>
                 </nav>
                 <nav>
                     <div className="grid grid-flow-col gap-4  text-white">
@@ -47,7 +46,7 @@ const Footer = () => {
                     </div>
                 </nav>
                 <aside>
-                    <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+                    <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by Asadullah Galib</p>
                 </aside>
             </footer>
         </div>

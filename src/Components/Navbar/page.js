@@ -10,11 +10,11 @@ const Navbar = async () => {
     const { isAuthenticated } = getKindeServerSession();
     const isUserAuthenticated = await isAuthenticated();
     return (
-        <div className="bg-indigo-500">
+        <div className="bg-indigo-500 px-2 md:px-4">
             <div className="navbar max-w-7xl mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                        <div tabIndex={0} role="button" className="btn btn-ghost text-white lg:hidden">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="h-5 w-5"
@@ -30,7 +30,7 @@ const Navbar = async () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-md z-[1] mt-3 w-52 p-2 shadow">
+                            className="menu menu-sm dropdown-content bg-sky-500 text-white rounded-md z-[1] mt-3 w-52 p-2 shadow">
                             <li><Link href="/">Home</Link></li>
                             <li><Link href="/profile">Profile</Link></li>
                             {
@@ -45,8 +45,8 @@ const Navbar = async () => {
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="flex items-center gap-4 font-medium px-1">
-                        <li className="font-medium text-white px-4 py-[6px] rounded-md bg-sky-500"><Link href="/">Home</Link></li>
-                        <li className="font-medium text-white px-4 py-[6px] rounded-md bg-sky-500"><Link href="/profile">Profile</Link></li>
+                        <Link href="/"><li className="font-medium text-white px-4 py-[6px] rounded-md bg-sky-500">Home</li></Link>
+                        <Link href="/profile"><li className="font-medium text-white px-4 py-[6px] rounded-md bg-sky-500">Profile</li></Link>
                         {
                             !isUserAuthenticated && <li className="font-medium text-white px-4 py-[6px] rounded-md bg-sky-500"><LoginLink>Login</LoginLink></li>
                         }
@@ -56,9 +56,9 @@ const Navbar = async () => {
                 <div className="navbar-end">
                     {
                         isUserAuthenticated ?
-                            <button className="px-4 py-2 bg-sky-500 text-white font-semibold rounded-md"><LogoutLink>Log out</LogoutLink></button>
+                            <LogoutLink><button className="px-4 py-2 bg-sky-500 text-white font-semibold rounded-md">Log out</button></LogoutLink>
                             :
-                            <button className="px-4 py-2 bg-sky-500 text-white font-semibold rounded-md"><RegisterLink >Sign up</RegisterLink></button>
+                            <RegisterLink><button className="px-4 py-2 bg-sky-500 text-white font-semibold rounded-md">Sign up</button></RegisterLink>
                     }
                 </div>
             </div>
