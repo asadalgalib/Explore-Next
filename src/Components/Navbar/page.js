@@ -23,9 +23,9 @@ const Navbar = async () => {
                             }
                             {
                                 isUserAuthenticated ?
-                                    <LogoutLink><button className="px-4 py-[6px] bg-sky-500 text-white rounded-md">Log out</button></LogoutLink>
+                                    <LogoutLink><li className="px-4 py-2 bg-sky-500 text-white rounded-md">Log out</li></LogoutLink>
                                     :
-                                    <RegisterLink><button className="px-4 py-[6px] bg-sky-500 text-white rounded-md">Sign up</button></RegisterLink>
+                                    <RegisterLink><li className="px-4 py-2 bg-sky-500 text-white rounded-md">Sign up</li></RegisterLink>
                             }
                         </ul>
                     </div>
