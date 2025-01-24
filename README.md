@@ -16,4 +16,4 @@ In this project, I explored
 
 ## Live Link
 
-Link : 
+Link : https://explore-next-indol.vercel.app
