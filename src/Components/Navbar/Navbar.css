@@ -10,3 +10,8 @@ ul {
     justify-content: center;
     gap: 15px;
 }
+
+li {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}

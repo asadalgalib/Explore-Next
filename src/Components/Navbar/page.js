@@ -19,7 +19,7 @@ const Navbar = async () => {
                             <Link href="/"><li className="font-medium text-white px-4 py-[6px] rounded-md bg-sky-500">Home</li></Link>
                             <Link href="/profile"><li className="font-medium text-white px-4 py-[6px] rounded-md bg-sky-500">Profile</li></Link>
                             {
-                                !isUserAuthenticated && <li className="font-medium text-white px-4 py-[6px] rounded-md bg-sky-500"><LoginLink>Login</LoginLink></li>
+                                !isUserAuthenticated && <li className="font-medium text-white px-4 py-2 rounded-md bg-sky-500"><LoginLink>Login</LoginLink></li>
                             }
                             {
                                 isUserAuthenticated ?
