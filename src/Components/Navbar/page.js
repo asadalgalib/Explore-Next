@@ -41,7 +41,7 @@ const Navbar = async () => {
                             }
                         </ul>
                     </div>
-                    <a className="text-2xl font-semibold text-white">Blog</a>
+                    <h1 className="text-2xl font-semibold text-white">Blog</h1>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="flex items-center gap-4 font-medium px-1">
